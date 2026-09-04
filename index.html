@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ka" data-lang="ka">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKA Individual Training Academy</title>
+  <meta name="description" content="Landing and information site for AKA Individual Training Academy, founded by former professional footballer Akaki. Individual and group football training in Tbilisi.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&family=Noto+Sans+Georgian:wght@100..900&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Top Navigation -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo" aria-label="AKA Academy Home">
+      <img src="AKA_transparent.png" alt="AKA Individual Training Academy" class="logo-image">
+    </a>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="#about"><span class="lang-ka">ჩვენს შესახებ</span><span class="lang-en">About</span></a>
+      <a href="#pricing"><span class="lang-ka">ფასები</span><span class="lang-en">Pricing</span></a>
+      <a href="#contact"><span class="lang-ka">კონტაქტი</span><span class="lang-en">Contact</span></a>
+    </div>
+
+    <div class="nav-actions">
+      <!-- Nav Socials -->
+      <div class="nav-socials">
+        <a href="https://www.facebook.com/share/1DhYz9F83o/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/akaindividualacademy" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@akaindividualacademy" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+      </div>
+
+      <!-- Language Toggle -->
+      <div class="lang-toggle">
+        <button id="btnKa" class="lang-btn active" onclick="setLanguage('ka')">ქარ</button>
+        <button id="btnEn" class="lang-btn" onclick="setLanguage('en')">EN</button>
+      </div>
+      
+      <!-- Primary Nav CTA -->
+      <a href="https://wa.me/995514129119?text=%E1%83%92%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%9D%E1%83%91%E1%83%90!%20%E1%83%9B%E1%83%90%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%A0%E1%83%94%E1%83%A1%E1%83%94%E1%83%91%E1%83%A1%20AKA%20%E1%83%90%E1%83%99%E1%83%90%E1%83%93%E1%83%94%E1%83%9B%E1%83%98%E1%83%98%E1%83%A1%20%E1%83%95%E1%83%90%E1%83%A0%E1%83%AF%E1%83%98%E1%83%A8%E1%83%94%E1%83%91%E1%83%98." target="_blank" rel="noopener" class="btn btn-primary nav-cta">WhatsApp</a>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-bg-container">
+      <img src="IMG_4258.jpg" alt="Stadium Backdrop" class="hero-bg-img">
+      <div class="hero-vignette"></div>
+    </div>
+    
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="lang-ka">ინდივიდუალური მომზადება <span class="accent-glow">შენი განვითარებისთვის</span></span>
+        <span class="lang-en">Individual training <span class="accent-glow">for your development</span></span>
+      </h1>
+      <p class="hero-description">
+        <span class="lang-ka">ინდივიდუალური საფეხბურთო მომზადება გამოცდილ ფეხბურთელთან 5–21 წლის მოთამაშეებისთვის.</span>
+        <span class="lang-en">Individual football training with a professional footballer. For players aged 5–21.</span>
+      </p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/995514129119?text=%E1%83%92%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%9D%E1%83%91%E1%83%90!%20%E1%83%9B%E1%83%90%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%A0%E1%83%94%E1%83%A1%E1%83%94%E1%83%91%E1%83%A1%20AKA%20%E1%83%90%E1%83%99%E1%83%90%E1%83%93%E1%83%94%E1%83%9B%E1%83%98%E1%83%98%E1%83%A1%20%E1%83%95%E1%83%90%E1%83%A0%E1%83%AF%E1%83%98%E1%83%A8%E1%83%94%E1%83%91%E1%83%98." target="_blank" rel="noopener" class="btn btn-primary">
+          <span class="lang-ka">მოგვწერე WhatsApp-ზე</span>
+          <span class="lang-en">Message on WhatsApp</span>
+        </a>
+        <a href="#pricing" class="btn btn-ghost">
+          <span class="lang-ka">იხილე ფასები</span>
+          <span class="lang-en">See Pricing</span>
+        </a>
+      </div>
+    </div>
+    
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="chevron">↓</span>
+    </a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section reveal">
+    <div class="container grid-2">
+      <div class="about-visual">
+        <div class="coach-video-frame">
+          <video
+            id="coachVideo"
+            class="coach-video"
+            src="akaki-about.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="IMG_4258.jpg"></video>
+          <button
+            type="button"
+            id="videoSoundToggle"
+            class="video-sound-toggle"
+            aria-label="Toggle sound"
+            onclick="toggleCoachSound()">
+            <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          </button>
+          <span class="video-caption">
+            <span class="lang-ka">აკაკი — ინდივიდუალური მწვრთნელი და აკადემიის დამფუძნებელი</span>
+            <span class="lang-en">Akaki — Individual coach &amp; founder of the academy</span>
+          </span>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">
+          <span class="lang-ka">ივარჯიშე გამოცდილ ფეხბურთელთან</span>
+          <span class="lang-en">Coached by a Professional</span>
+        </h2>
+        <div class="section-divider"></div>
+        <p class="about-bio">
+          <span class="lang-ka">აკაკი პროფესიონალი ფეხბურთელია, 16+ წლიანი გამოცდილებით. მისი კარიერა მოიცავს არაერთ კლუბს, როგორც საქართველოში, ისე ევროპაში.</span>
+          <span class="lang-en">Akaki is a professional footballer with over 16 years of experience. His career spans clubs across Georgia and Europe.</span>
+        </p>
+        <p class="about-bio">
+          <span class="lang-ka">დღეს მისი მიზანია, საკუთარი ცოდნა და გამოცდილება გადასცეს ახალ თაობას — სწორედ ამიტომ დაარსდა AKA ინდივიდუალური ვარჯიშის აკადემია.</span>
+          <span class="lang-en">Today his mission is to pass on his knowledge and experience to the next generation — this is why AKA Individual Training Academy was founded.</span>
+        </p>
+        <!-- Stats Row -->
+        <div class="stats-grid stats-grid-single">
+          <div class="stat-card">
+            <span class="stat-num">
+              <span class="lang-ka">16+ <span class="stat-unit">წელი</span></span>
+              <span class="lang-en">16+ <span class="stat-unit">Years</span></span>
+            </span>
+            <span class="stat-label">
+              <span class="lang-ka">საფეხბურთო გამოცდილება</span>
+              <span class="lang-en">Years in Football</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section reveal dark-bg">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="lang-ka">აირჩიე სავარჯიშო ფორმატი</span>
+        <span class="lang-en">Choose Your Training Format</span>
+      </h2>
+      
+      <div class="pricing-grid">
+        <!-- Tier 1 -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="pricing-type"><span class="lang-ka">გუნდური ვარჯიში</span><span class="lang-en">Team Training</span></span>
+            <div class="pricing-price">
+              <span class="amount">200</span>
+              <span class="currency">GEL / <span class="lang-ka">თვე</span><span class="lang-en">mo.</span></span>
+            </div>
+            <p class="pricing-schedule"><span class="lang-ka">კვირაში 2-ჯერ</span><span class="lang-en">2× per week</span></p>
+          </div>
+          <div class="pricing-action">
+            <a href="https://wa.me/995514129119?text=%E1%83%92%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%9D%E1%83%91%E1%83%90!%20%E1%83%9B%E1%83%90%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%A0%E1%83%94%E1%83%A1%E1%83%94%E1%83%91%E1%83%A1%20%E1%83%92%E1%83%A3%E1%83%9C%E1%83%93%E1%83%A3%E1%83%A0%E1%83%98%20%E1%83%95%E1%83%90%E1%83%A0%E1%83%AF%E1%83%98%E1%83%A8%E1%83%94%E1%83%91%E1%83%98%20AKA%20%E1%83%90%E1%83%99%E1%83%90%E1%83%93%E1%83%94%E1%83%9B%E1%83%98%E1%83%90%E1%83%A8%E1%83%98%20(%E1%83%99%E1%83%95%E1%83%98%E1%83%A0%E1%83%90%E1%83%A8%E1%83%98%202)." target="_blank" rel="noopener" class="btn btn-ghost btn-full">
+              <span class="lang-ka">დაჯავშნა</span><span class="lang-en">Book Trial</span>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Tier 2 (Highlighted) -->
+        <div class="pricing-card popular">
+          <div class="popular-badge"><span class="lang-ka">ყველაზე პოპულარული</span><span class="lang-en">Most popular</span></div>
+          <div class="pricing-header">
+            <span class="pricing-type text-gold"><span class="lang-ka">გუნდური ვარჯიში +</span><span class="lang-en">Team Training Plus</span></span>
+            <div class="pricing-price">
+              <span class="amount text-gold">250</span>
+              <span class="currency">GEL / <span class="lang-ka">თვე</span><span class="lang-en">mo.</span></span>
+            </div>
+            <p class="pricing-schedule"><span class="lang-ka">კვირაში 3-ჯერ</span><span class="lang-en">3× per week</span></p>
+          </div>
+          <div class="pricing-action">
+            <a href="https://wa.me/995514129119?text=%E1%83%92%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%9D%E1%83%91%E1%83%90!%20%E1%83%9B%E1%83%90%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%A0%E1%83%94%E1%83%A1%E1%83%94%E1%83%91%E1%83%A1%20%E1%83%92%E1%83%A3%E1%83%9C%E1%83%93%E1%83%A3%E1%83%A0%E1%83%98%20%E1%83%95%E1%83%90%E1%83%A0%E1%83%AF%E1%83%98%E1%83%A8%E1%83%94%E1%83%91%E1%83%98%20AKA%20%E1%83%90%E1%83%99%E1%83%90%E1%83%93%E1%83%94%E1%83%9B%E1%83%98%E1%83%90%E1%83%A8%E1%83%98%20(%E1%83%99%E1%83%95%E1%83%98%E1%83%A0%E1%83%90%E1%83%A8%E1%83%98%203)." target="_blank" rel="noopener" class="btn btn-primary btn-full">
+              <span class="lang-ka">დაჯავშნა</span><span class="lang-en">Book Trial</span>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Tier 3 -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="pricing-type"><span class="lang-ka">ინდივიდუალური 1-on-1</span><span class="lang-en">Individual 1-on-1</span></span>
+            <div class="pricing-price">
+              <span class="amount">500</span>
+              <span class="currency">GEL / <span class="lang-ka">თვე</span><span class="lang-en">mo.</span></span>
+            </div>
+            <p class="pricing-schedule"><span class="lang-ka">პერსონალური ვარჯიში</span><span class="lang-en">Personal training</span></p>
+          </div>
+          <div class="pricing-action">
+            <a href="https://wa.me/995514129119?text=%E1%83%92%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%9D%E1%83%91%E1%83%90!%20%E1%83%9B%E1%83%90%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%A0%E1%83%94%E1%83%A1%E1%83%94%E1%83%91%E1%83%A1%20%E1%83%98%E1%83%9C%E1%83%93%E1%83%98%E1%83%95%E1%83%98%E1%83%93%E1%83%A3%E1%83%90%E1%83%9A%E1%83%A3%E1%83%A0%E1%83%98%201-on-1%20%E1%83%95%E1%83%90%E1%83%A0%E1%83%AF%E1%83%98%E1%83%A8%E1%83%94%E1%83%91%E1%83%98%20AKA%20%E1%83%90%E1%83%99%E1%83%90%E1%83%93%E1%83%94%E1%83%9B%E1%83%98%E1%83%90%E1%83%A8%E1%83%98." target="_blank" rel="noopener" class="btn btn-ghost btn-full">
+              <span class="lang-ka">დაჯავშნა</span><span class="lang-en">Book Trial</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section id="philosophy" class="section reveal">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="lang-ka">ოთხი პრინციპი, რომელზეც ვდგავართ</span>
+        <span class="lang-en">Four Core Principles We Stand By</span>
+      </h2>
+      
+      <div class="principles-grid">
+        <div class="principle-card">
+          <div class="principle-num">01</div>
+          <h3 class="principle-title">
+            <span class="lang-ka">დისციპლინა და შრომა</span>
+            <span class="lang-en">Discipline &amp; Work</span>
+          </h3>
+          <p class="principle-quote">
+            <span class="lang-ka">შედეგი ყოველთვის იმალება იმ რუტინულ და ხშირად დამღლელ ნაბიჯებში, რომლებსაც მაშინ დგავ, როცა ამის სურვილი ყველაზე ნაკლებად გაქვს.</span>
+            <span class="lang-en">Results always hide in the routine, often exhausting steps you take when you least feel like it.</span>
+          </p>
+        </div>
+
+        <div class="principle-card">
+          <div class="principle-num">02</div>
+          <h3 class="principle-title">
+            <span class="lang-ka">ბრძოლა და გამოწვევები</span>
+            <span class="lang-en">Struggle &amp; Challenges</span>
+          </h3>
+          <p class="principle-quote">
+            <span class="lang-ka">დაბრკოლებები და მარცხი არა სისუსტის ნიშანი, არამედ ზრდისა და გამოცდილების აუცილებელი ეტაპია.</span>
+            <span class="lang-en">Obstacles and failure are not signs of weakness — they are a necessary stage of growth and experience.</span>
+          </p>
+        </div>
+
+        <div class="principle-card">
+          <div class="principle-num">03</div>
+          <h3 class="principle-title">
+            <span class="lang-ka">დრო და ფოკუსი</span>
+            <span class="lang-en">Time &amp; Focus</span>
+          </h3>
+          <p class="principle-quote">
+            <span class="lang-ka">ფოკუსირდი მხოლოდ იმ საქმეებსა და მიზნებზე, რომლებსაც შენი წინ სვლა შეუძლიათ.</span>
+            <span class="lang-en">Focus only on the tasks and goals that can move you forward.</span>
+          </p>
+        </div>
+
+        <div class="principle-card">
+          <div class="principle-num">04</div>
+          <h3 class="principle-title">
+            <span class="lang-ka">შინაგანი ძალა</span>
+            <span class="lang-en">Inner Strength</span>
+          </h3>
+          <p class="principle-quote">
+            <span class="lang-ka">ნამდვილი პროგრესი იწყება მაშინ, როდესაც ზარმაცობას, შიშებსა და ემოციებს ამარცხებ და მიზნისკენ მიმავალ გზას არ უხვევ.</span>
+            <span class="lang-en">Real progress begins when you defeat laziness, fear, and emotion — and stay on the path to your goal.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Form Section -->
+  <section id="contact" class="section reveal contact-section">
+    <div class="contact-bg-container">
+      <img src="IMG_4258.jpg" alt="" class="contact-bg-img">
+      <div class="contact-overlay"></div>
+    </div>
+    
+    <div class="container grid-2 relative">
+      <div>
+        <h2 class="section-title">
+          <span class="lang-ka">მზად ხარ დასაწყებად?</span>
+          <span class="lang-en">Ready to Start?</span>
+        </h2>
+        <p class="contact-desc">
+          <span class="lang-ka">ერთად მივაღწიოთ დიდ მიზნებს.</span>
+          <span class="lang-en">Together, let's reach great goals.</span>
+        </p>
+        <p class="contact-address">
+          <span class="lang-ka">მისამართი: თბილისი, ვაზისუბანი</span>
+          <span class="lang-en">Address: Tbilisi, Vazisubani</span>
+        </p>
+        
+        <a href="https://wa.me/995514129119?text=%E1%83%92%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%9D%E1%83%91%E1%83%90!%20%E1%83%9B%E1%83%90%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%A0%E1%83%94%E1%83%A1%E1%83%94%E1%83%91%E1%83%A1%20AKA%20%E1%83%90%E1%83%99%E1%83%90%E1%83%93%E1%83%94%E1%83%9B%E1%83%98%E1%83%98%E1%83%A1%20%E1%83%95%E1%83%90%E1%83%A0%E1%83%AF%E1%83%98%E1%83%A8%E1%83%94%E1%83%91%E1%83%98." target="_blank" rel="noopener" class="btn btn-primary contact-cta">
+          <span class="lang-ka">მოგვწერე WhatsApp-ზე</span>
+          <span class="lang-en">Message on WhatsApp</span>
+        </a>
+        
+        <div class="social-links">
+          <a href="https://wa.me/995514129119" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/akaindividualacademy" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@akaindividualacademy" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/1DhYz9F83o/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Location Map -->
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps?q=41.7054304,44.8476311&z=17&hl=ka&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="AKA Individual Training Academy location"></iframe>
+        <a
+          href="https://www.google.com/maps/place/სტადიონი/@41.7054304,44.8476311,18z"
+          target="_blank"
+          rel="noopener"
+          class="map-open-link">
+          <span class="lang-ka">გახსენი Google Maps-ში ↗</span>
+          <span class="lang-en">Open in Google Maps ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo-container">
+          <img src="AKA_transparent.png" alt="AKA Individual Training Academy Logo" class="footer-logo">
+        </span>
+        <div class="footer-info">
+          <div><strong><span class="lang-ka">AKA ინდივიდუალური საფეხბურთო აკადემია</span><span class="lang-en">AKA Individual Football Academy</span></strong></div>
+          <div class="footer-address"><span class="lang-ka">თბილისი, ვაზისუბანი</span><span class="lang-en">Tbilisi, Vazisubani</span> · +995 514 129 119</div>
+        </div>
+      </div>
+      
+      <div class="footer-meta">
+        <div class="footer-socials">
+          <a href="https://wa.me/995514129119" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/akaindividualacademy" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@akaindividualacademy" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/1DhYz9F83o/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+        <div class="lang-toggle footer-lang">
+          <button id="btnKaFooter" class="lang-btn active" onclick="setLanguage('ka')">ქარ</button>
+          <button id="btnEnFooter" class="lang-btn" onclick="setLanguage('en')">EN</button>
+        </div>
+        <div class="footer-copy">© 2026 AKA Individual Training Academy. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky WhatsApp CTA (Mobile Optimized) -->
+  <a href="https://wa.me/995514129119?text=%E1%83%92%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%9D%E1%83%91%E1%83%90!%20%E1%83%9B%E1%83%90%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%A0%E1%83%94%E1%83%A1%E1%83%94%E1%83%91%E1%83%A1%20AKA%20%E1%83%90%E1%83%99%E1%83%90%E1%83%93%E1%83%94%E1%83%9B%E1%83%98%E1%83%98%E1%83%A1%20%E1%83%95%E1%83%90%E1%83%A0%E1%83%AF%E1%83%98%E1%83%A8%E1%83%94%E1%83%91%E1%83%98." target="_blank" rel="noopener" class="floating-cta" aria-label="Message Akaki on WhatsApp">
+    <span class="cta-pulse-dot"></span>
+    <span class="lang-ka">მოგვწერე</span><span class="lang-en">Message us</span>
+  </a>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">×</button>
+    <div class="lightbox-content">
+      <div class="lightbox-card">
+        <span id="lightboxLabel" class="lightbox-label"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

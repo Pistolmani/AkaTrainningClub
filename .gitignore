@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Node / Vercel
+node_modules/
+.vercel/
+
+# Design process artifacts (not used by the site)
+extracted/
+AKA Academy.html
+Gemini_Generated_Image_*.png
+football.jfif
