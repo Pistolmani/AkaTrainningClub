@@ -229,6 +229,7 @@ a:hover {
   height: 120px;
 }
 
+
 .nav-links {
   display: none;
   gap: 32px;
@@ -1464,4 +1465,65 @@ a:hover {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ------------------------------------------------------------------
+   Mobile navbar layout — TWO ROWS
+   Row 1: socials + lang toggle + hamburger at top
+   Row 2: big centered logo below
+   Placed at end of file to win cascade over earlier .nav-socials rules.
+   ------------------------------------------------------------------ */
+@media (max-width: 767px) {
+  #navbar {
+    padding: 8px 14px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 6px;
+  }
+  #navbar.scrolled {
+    padding: 6px 14px 8px;
+  }
+
+  /* Row 1 */
+  #navbar .nav-actions {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    align-items: center;
+  }
+  #navbar .nav-socials {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    margin-right: auto;
+  }
+  #navbar .nav-socials .social-icon {
+    width: 32px;
+    height: 32px;
+  }
+  #navbar .nav-socials .social-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  .lang-toggle .lang-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  /* Row 2 — big logo below */
+  #navbar .nav-logo {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-image {
+    height: 170px;
+  }
+  #navbar.scrolled .logo-image {
+    height: 110px;
+  }
 }
