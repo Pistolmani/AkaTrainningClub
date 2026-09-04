@@ -3,7 +3,7 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Language Localization Setup
+  // 1. Language Localization Setup — always default to Georgian; honor user's manual override.
   const defaultLang = 'ka';
   let currentLang = defaultLang;
 
@@ -11,12 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('aka-lang');
     if (savedLang === 'ka' || savedLang === 'en') {
       currentLang = savedLang;
-    } else {
-      // Basic browser language fallback
-      const browserLang = navigator.language || navigator.userLanguage;
-      if (browserLang.startsWith('en')) {
-        currentLang = 'en';
-      }
     }
   } catch (e) {
     console.warn('LocalStorage is not available, falling back to default language.');
