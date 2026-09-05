@@ -650,18 +650,33 @@ a:hover {
 
 .stats-grid-single {
   grid-template-columns: 1fr;
-  max-width: 320px;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
 }
 
 .stats-grid-single .stat-card {
-  padding: 32px 24px;
+  padding: 8px 14px;
+}
+
+.stat-label-top {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 8px;
+  opacity: 0.9;
 }
 
 .stat-num {
   display: block;
   font-family: "Inter", "Noto Sans Georgian", sans-serif;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 42px;
   line-height: 1;
   color: var(--color-glow);
 }
