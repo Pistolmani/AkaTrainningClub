@@ -68,8 +68,7 @@ Cards on black, gold borders, hover raises + gold glow:
 
 | Tier | Price | Frequency |
 |---|---|---|
-| **Team Training** | 200 GEL / month | 2× per week |
-| **Team Training Plus** | 250 GEL / month | 3× per week |
+| **Team Training Plus** | 200 GEL / month | 3× per week |
 | **Individual 1-on-1** | 500 GEL / month | personalized schedule |
 
 Middle tier marked "Most Popular" with slightly brighter gold accent. Each card ends with a WhatsApp CTA prefilled with the tier name.
